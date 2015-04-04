@@ -7,8 +7,7 @@
            revision="refs/tags/android-5.1.0_r3" />
 
   <remote  name="github"
-           fetch=".."
-           review="review.cyanogenmod.org" />
+           fetch="https://github.com" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
@@ -21,6 +20,10 @@
   <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  
+  <project path="frameworks/base" name="burnee/android_frameworks_base" remote="github" revision="cm-12.1" />
+  <project path="packages/apps/Settings" name="burnee/android_packages_apps_Settings" remote="github" revision="cm-12.1" />
+  <project path="vendor/cm" name="burnee/android_vendor_cm" remote="github" revision="cm-12.1" />
 
   <project path="android" name="CyanogenMod/android" />
 
@@ -333,7 +336,6 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" remote="aosp" />
   <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" groups="pdk" />
@@ -468,7 +470,6 @@
   <project path="packages/apps/PackageInstaller" name="CyanogenMod/android_packages_apps_PackageInstaller" />
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" />
   <project path="packages/apps/Provision" name="CyanogenMod/android_packages_apps_Provision" />
-  <project path="packages/apps/Settings" name="CyanogenMod/android_packages_apps_Settings" />
   <project path="packages/apps/SetupWizard" name="CyanogenMod/android_packages_apps_SetupWizard" />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" />
@@ -580,5 +581,4 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" />
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
-  <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
 </manifest>
