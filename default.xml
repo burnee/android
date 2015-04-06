@@ -24,6 +24,7 @@
   <project path="frameworks/base" name="burnee/android_frameworks_base" remote="github" revision="cm-12.1" />
   <project path="packages/apps/Settings" name="burnee/android_packages_apps_Settings" remote="github" revision="cm-12.1" />
   <project path="vendor/cm" name="burnee/android_vendor_cm" remote="github" revision="cm-12.1" />
+  <project path="external/bluetooth/bluedroid" name="temasek/android_external_bluetooth_bluedroid" remote="github" revision="cm-12.1" />
 
   <project path="android" name="CyanogenMod/android" />
 
@@ -74,7 +75,6 @@
   <project path="external/bash" name="CyanogenMod/android_external_bash" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" remote="aosp" />
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/bluetooth/bluedroid" name="CyanogenMod/android_external_bluetooth_bluedroid" groups="pdk" />
   <project path="external/bouncycastle" name="CyanogenMod/android_external_bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" remote="aosp" />
   <project path="external/bson" name="CyanogenMod/android_external_bson" />
